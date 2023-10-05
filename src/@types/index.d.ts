@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 
 export type IRootStackParamList = {
   Home: undefined;
+  Create: undefined;
 };
 
 export type ScreenType = {

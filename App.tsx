@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native"
 import { createStackNavigator } from '@react-navigation/stack';
 import { IRootStackParamList, ScreenType } from './src/@types';
 import HomeScreen from './src/screens/HomeScreen';
+import CreateScreen from './src/screens/CreateScreen';
 
 export default function App() {
   const { Screen, Navigator } = createStackNavigator<IRootStackParamList>()
@@ -16,7 +17,15 @@ export default function App() {
         animation: "fade",
         headerShown: false
       }
-    }
+    },
+    {
+      name: "Create",
+      component: CreateScreen,
+      options: {
+        animation: "fade",
+        headerShown: false
+      }
+    },
   ]
   return (
     <NavigationContainer>
